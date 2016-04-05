@@ -1,0 +1,96 @@
+#include <iostream>
+
+int main() {
+
+	int x;
+	int y;
+
+	std::cout << "Enter your first number\n";
+
+	std::cin >> x;
+
+	std::cout << "Enter your second number\n";
+
+	std::cin >> y;
+
+	if(x > y){
+
+		std::cout << "\n";
+		std::cout << "The first number you entered [" << x << "] is bigger than your second number [" << y << "] \n";
+		std::cout << "\n";
+	}
+
+	if(x < y){
+
+		std::cout << "\n";
+		std::cout << "The first number you entered [" << x << "] is smaller than your second number [" << y << "] \n";
+		std::cout << "\n";
+	}
+
+	if(x==y){
+
+		std::cout << "\n";
+		std::cout << "The first number you entered  [" << x << "] is the same as your second number [" << y << "] \n";	
+		std::cout << "\n"; 
+	}
+
+	std::cout << "Want to know if one of your numbers is prime? (type 1 for yes or 2 for no)\n";
+	std::cout << "\n";
+
+
+	int option;
+
+	std::cin >> option;
+
+	if (option == 1){
+
+		std::cout << "Do you want to test number 1 or number 2? (enter 1 or 2)\n";
+
+		int numoption;
+
+		std::cin >> numoption;
+
+
+
+
+		if(numoption == 1){
+
+				std::cout << "THIS IS A TEST RUN FOR TESTING NUMBER 1 FOR PRIMENESS\n";
+
+				for(int i = 1; i < x+1; i++){
+
+					if(x%i == 0){
+
+					
+
+						std::cout << "NONPRIME: match detected at " << i << "\n";
+
+
+
+					
+		}
+	}
+
+}
+
+		else{
+
+			std::cout << "THIS IS A TEST RUN FOR TESTING NUMBER 2 FOR PRIMENESS\n";
+
+			for(int i = 1; i < y+1; i++){
+
+					if(y%i == 0){
+
+						std::cout << "NONPRIME: match detected at " << i << "\n";
+					}
+				}
+		}
+	}
+
+
+
+
+
+
+	return 0;
+}
